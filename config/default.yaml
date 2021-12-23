@@ -1,11 +1,15 @@
 server: 
   port: 3000
   
-db: 
+db:
   type: 'postgres'
   port: 5432
-  database: 'test-db'
+  database: 'test_db'
+  host: '192.168.10.70'
+  username: 'postgres'
+  password: 'postgres'
+  synchronize: true
 
 jwt:
   expiresIn: 3600
-
+  secret: 'Secret1234'

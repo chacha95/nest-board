@@ -3,6 +3,8 @@ import * as config from 'config';
 
 const dbConfig = config.get('db');
 
+console.log(dbConfig);
+
 export const typeORMConfig: TypeOrmModuleOptions = {
   type: dbConfig.type,
   host: process.env.RDS_HOSTNAME || dbConfig.host,
